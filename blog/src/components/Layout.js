@@ -4,11 +4,6 @@ import Header from './Header';
 
 
 function Layout(props) {
-
-
-
-
-
     return <div>
 
         <Header></Header>
@@ -20,7 +15,11 @@ function Layout(props) {
 
 
 
+
+
     </div>
 };
+
+
 
 export default Layout;
