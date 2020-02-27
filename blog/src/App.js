@@ -1,43 +1,49 @@
 import React from 'react';
-import './App.css';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Layout from './components/Layout';
-import Blogpos1 from './components/Blogpost1';
 import Project from './components/Project';
 import About from './components/About';
 import Contact from './components/Contact';
 import Home from './components/Home';
 import Blog from './components/Blog';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
+  Link
 } from "react-router-dom";
 
-function App() {
+function App(props) {
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/home">
-          <Home />
-        </Route>
-        <Router path="/about">
-          <About />
-        </Router>
-        <Router path="/project">
-          <Project />
-        </Router>
-        <Router path="/blog">
-          <Blog />
-        </Router>
-        <Route path="/contact">
-          <Contact />
-        </Route>
 
-      </Switch>
+    <Router>
+      <div className="flex flex-col min-h-screen">
+        <Header></Header>
+
+        <div className="flex-grow">
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Router path="/about">
+              <About title="Lavinia" />
+            </Router>
+            <Router path="/project">
+              <Project />
+            </Router>
+            <Router path="/blog">
+              <Blog />
+            </Router>
+            <Route path="/contact">
+              <Contact />
+            </Route>
+          </Switch>
+        </div>
+
+        <Footer></Footer>
+      </div>
 
     </Router>
   );

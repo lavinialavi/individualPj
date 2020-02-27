@@ -8,6 +8,7 @@ const blogPostsList = [
     },
     {
         title: 'Hey, second',
+        link: 'dsadsa',
         date: '26 Feb',
         author: 'Author: Daniel',
         summary: 'h ldhlk ldkshak kdklash lkhlksad'

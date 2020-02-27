@@ -4,10 +4,15 @@ import Layout from './Layout'
 function About(props) {
     return (
         <Layout>
-            <h1>{props.title}</h1>
-            <small>{props.date}</small>
-            <h3>Written by: {props.author}</h3>
+            <h2>About me {props.title}</h2>
+
+            <p> Aerosmith: “Dream until your dreams come true.” {props.mantra}</p>
+
+            <h2> Contact details{props.details} </h2>
+            <h3> Name: Lavinia Budean {props.name}</h3>
+            <p></p>
             {props.children}
+
         </Layout>
     )
 
