@@ -29,15 +29,21 @@ function Home(props) {
                 }
 
             </ul>
-            <Player
-                playsInline
-                poster="/media/video.mp4"
-                src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
-            />
-
+            
+        <Player
+      playsInline 
+      poster="/assets/poster.png"
+       className= "h-2 w-2" src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"/>
+    
         </Layout>
     );
 }
 
 
+
+
+
 export default Home
+
+
+
