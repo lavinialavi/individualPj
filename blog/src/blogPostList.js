@@ -1,17 +1,18 @@
 const blogPostsList = [
     {
-        title: 'Hey, first',
-        link: 'hey-first',
+        title: 'Envision YOU',
+        link: 'first-blog',
         date: '25 Feb',
-        author: 'Author: Daniel',
-        summary: 'h ldhlk ldkshak kdklash lkhlksad'
+        author: 'Elena ',
+        summary: 'If You Are Working On Something That You Really Care About, You Don’t Have To Be Pushed. The Vision Pulls You',
+        picture: '/media/coffee.png'
     },
     {
         title: 'Hey, second',
-        link: 'dsadsa',
+        link: 'second-blog',
         date: '26 Feb',
-        author: 'Author: Daniel',
-        summary: 'h ldhlk ldkshak kdklash lkhlksad'
+        author: 'Author: Lavinia',
+        summary: 'Dream until your dreams come true'
     },
 ]
 

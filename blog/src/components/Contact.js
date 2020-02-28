@@ -34,8 +34,6 @@ function Contact(props) {
 
     return <Layout>
         <div className="container mx-auto">
-
-
             <h1 className="font-bold text-3xl" >Contact me</h1>
             <div className="flex">
 
@@ -50,9 +48,7 @@ function Contact(props) {
                                 <input onChange={handleFirstName}  required className="block w-full bg-white rounded-sm px-0 py-1 border border-blue-200 italic" type="text" id="firstName" name="name" placeholder="Enter first name" />
                                 </label>
                             </div>
-                            
-                            
-                            
+                                                      
                             <div className="w-1/2 mr-8">
                                 <label htmlFor="lastName">Last name*
 
@@ -79,7 +75,7 @@ function Contact(props) {
                         <div>
                         <label htmlFor="message">Message*
                         
-                            <textarea onChange={hangleMessage} required className="block w-full bg-white rounded-sm px-0 py-1 border border border-blue-200 italic" rows="5" cols="30" id="subject" name="subject" placeholder="message"></textarea>
+                            <textarea onChange= {handleMessage} required className="block w-full bg-white rounded-sm px-0 py-1 border border border-blue-200 italic" rows="5" cols="30" id="subject" name="subject" placeholder="message"/>
                         </label>
 
                         </div>
@@ -94,8 +90,9 @@ function Contact(props) {
 
         </div>
 
-
     </Layout>
-};
+}
+                                        
+                
 
 export default Contact;
