@@ -9,8 +9,8 @@ function Project(props) {
         <Layout >
             <h1>{props.title}</h1>
             <small>{props.rules}</small>
-            <h3 className="font-bold">A little project I have worked on {props.author} </h3>
-            <Codepan>
+            <h3 className="font-bold colorlib-heading animate-box fadeInUp animated">A little project I have worked on {props.author} </h3>
+            <Codepan className="timeline-entry animate-box fadeInLeft animated">
                 
             </Codepan> 
             {props.children}

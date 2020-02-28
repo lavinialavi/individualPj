@@ -32,7 +32,7 @@ function Home(props) {
 
             <Player
         playsInline
-        poster="/media/coffee.png"
+         className ="mx-auto w-full md:w-8/12 "  poster="/media/video.mp4"
 
         fluid={false}
         width={600}
