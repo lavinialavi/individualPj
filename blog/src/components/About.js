@@ -9,10 +9,10 @@ function About(props) {
             <div className="flex">
                       <div className="col-sm-6 col-md-7">
                         <div className="about-info">
-                          <p><span className="title-s">Name: </span> <span>Morgan Freeman</span></p>
-                          <p><span className="title-s">Profile: </span> <span>full stack developer</span></p>
-                          <p><span className="title-s">Email: </span> <span>contact@example.com</span></p>
-                          <p><span className="title-s">Phone: </span> <span>(617) 557-0089</span></p>
+                          <p><span className="title-s">Name: </span> <span>Lavinia Budean</span></p>
+                          <p><span className="title-s">Profile: </span> <span>front-end developer</span></p>
+                          <p><span className="title-s">Email: </span> <span>lavinia.budean@evozon.com</span></p>
+                          <p><span className="title-s">Phone: </span> <span>0755 768574</span></p>
                         </div>
                       </div>
                     </div>
@@ -22,13 +22,9 @@ function About(props) {
                       <div className="progress">
                         <div className="progress-bar" role="progressbar" style={{width: '85%'}} aria-valuenow={85} aria-valuemin={0} aria-valuemax={100} />
                       </div>
-                      <span>CSS3</span> <span className="pull-right">75%</span>
+                      <span>CSS</span> <span className="pull-right">75%</span>
                       <div className="progress">
                         <div className="progress-bar" role="progressbar" style={{width: '75%'}} aria-valuenow={75} aria-valuemin={0} aria-valuemax={100} />
-                      </div>
-                      <span>PHP</span> <span className="pull-right">50%</span>
-                      <div className="progress">
-                        <div className="progress-bar" role="progressbar" style={{width: '50%'}} aria-valuenow={50} aria-valuemin={0} aria-valuemax={100} />
                       </div>
                       <span>JAVASCRIPT</span> <span className="pull-right">90%</span>
                       <div className="progress">
