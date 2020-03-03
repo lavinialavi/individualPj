@@ -1,54 +1,30 @@
 import React from 'react'
 import Layout from './Layout'
-import { Link } from 'react-router-dom'
-import blogPostsList from '../blogPostList'
-// import "~video-react/styles/scss/video-react";
 import '../../node_modules/video-react/dist/video-react.css';
-import { Player } from 'video-react';
+import { Player} from 'video-react';
 
 
 
 function Home(props) {
     return (
-        <Layout>
+                <Layout>
+        <div style={{}}>
 
-            <ul>
-                {
-                    blogPostsList.map(blogPost => {
-                        return (<li key={blogPost.title}>
-                            <Link to={blogPost.link}>
-                                <h2 className="text-xl font-bold">{blogPost.title}</h2>
-                            </Link>
-                            <small>{blogPost.date}</small>
-                            <h3>{blogPost.author}</h3>
-                            <p>{blogPost.summary}</p>
-                           
+           
 
-                        </li>)
-                    }
-                    )
-                }
-            </ul>
+            <Player className="mx-auto w-full md:w-8/12 mb-8"
 
-            <Player
-        playsInline
-         className ="mx-auto w-full md:w-8/12 "  poster="/media/video.mp4"
+              fluid={false}
+                width={600}
+                height={300}
+                padding={100}
 
-        fluid={false}
-        width={600}
-        height={300}
-   
+              poster="/assets/poster.png"
+              src="https://res.cloudinary.com/laviniaella/video/upload/v1583226149/lavv/video_ivyvce.mp4"/>
 
-      />
-        </Layout>
-    )
-}
+</div>
+                </Layout>
+            )
+        }
 
-
-
-
-
-export default Home
-
-
-
+        export default Home

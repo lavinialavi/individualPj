@@ -1,5 +1,7 @@
 import React from 'react';
 import Layout from './Layout'
+import imageLoader from '../media/contact.jpg'
+import { GoMailRead } from 'react-icons/go';
 
 
 function Contact(props) {
@@ -83,11 +85,23 @@ function Contact(props) {
 
                     </form>
                 </div>
-                <div className="w-full md:w-1/2 px-4 py-2">
-                    <img  alt="" src="media/contact.jpg" ></img> I look forward to hearing from you! 
-                </div>
-                </div>
+                  
 
+                <div className="w-full md:w-1/2 px-4 py-2">
+                <div className="w-1/2 mr-8">
+                <div className="flex flex-nowrap items-center"> <h1 className="font-bold text-3xl " >Get in Touch </h1> <GoMailRead className=" ml-4 h-8 w-8 text-blue-500 inline"></GoMailRead></div>
+                
+
+                   
+                    Feel free to contact me at any time and I promise I will come back to you as soon as your message reaches out to me. I am open to colaborate and discuss any terms and conditions that might appear along the way. 
+                    I look forward to hearing from you! 
+
+                  
+                   
+
+  </div>
+                    </div>
+                    </div>
         </div>
 
     </Layout>

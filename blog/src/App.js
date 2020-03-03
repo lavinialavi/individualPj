@@ -19,6 +19,7 @@ function App(props) {
   return (
 
     <Router>
+    
       <div className="flex flex-col min-h-screen">
         <Header></Header>
 
@@ -41,7 +42,6 @@ function App(props) {
             </Route>
           </Switch>
         </div>
-
         <Footer></Footer>
       </div>
 
