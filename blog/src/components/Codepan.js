@@ -6,7 +6,7 @@ class Codepan extends Component {
         return (
             <div className="mx-auto w-full md:w-8/12 ">
 
-            <Codepen hash="PoqmZXQ" user="lavinialavi" />
+                <Codepen hash="PoqmZXQ" user="lavinialavi" />
             </div>
         )
     }

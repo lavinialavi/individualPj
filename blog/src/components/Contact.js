@@ -35,7 +35,7 @@ function Contact(props) {
 
 
     return <Layout>
-        <div className="container mx-auto">
+        <div className="container  mx-20 items-center justify-center">
             <h1 className="font-bold text-3xl" >Contact me</h1>
             <div className="flex">
 
