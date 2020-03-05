@@ -2,45 +2,48 @@ import React from 'react';
 import Layout from './Layout'
 import blogPostsList from '../blogPostList'
 import { Link } from 'react-router-dom'
+import { Card, CardContent, Button, CardActions, Grid, Container,CardMedia,Typography} from '@material-ui/core'
 
 
 function Blog(props) {
     return (
         <Layout>
-            <ul className=" flex flex-row items-center justify-center">
-                {
-                    blogPostsList.map(blogPost => {
-                        return (<div className="flex inline-flex grid-rows-auto"><li className="my-12 mx-4 shadow-xl m-6 " key={blogPost.title}>
-                            <Link to={blogPost.link}>
-                                <h2 className="text-xl font-bold text-blue-500" >{blogPost.title}</h2>
-                            </Link>
-                            <div className="flex" >
-                                <small className="mr-6 ">{blogPost.date}</small>
-                                <small>{blogPost.author}</small>
-                            </div>
-                            <p>{blogPost.summary}</p>
+            <Container className='my-10'>
+                <Grid container spacing={2} alignItems="stretch" justify="center">
+                    {blogPostsList.map(blogPost => {
+                        return (<Grid  item xs={12} sm={6} md={4} lg={3}>
+                            <Card className="h-full">
 
+                            <CardMedia className="h-48"
+                                image= "https://res.cloudinary.com/laviniaella/image/upload/v1583308812/lavv/Noble_Gardens_Mural_Wallpaper__Unique_Murals___Forest_Homes_r45m13.jpg">
+                            </CardMedia>
+                                <CardContent>
+                                <Link to ={blogPost.link}>
+                                <Typography variant="h4">{blogPost.title}</Typography>
+                                </Link>
+                                <Typography variant="subtitle1">{blogPost.date}</Typography>
+                                <Typography variant="subtitle1">{blogPost.author}</Typography>
+                                <Grid container>
+                                <Grid item xs={12}> 
+                               
+                                </Grid>
 
-                        </li></div>)
-
+                                </Grid>
+                                </CardContent>
+                                <CardActions>
+                    
+                                </CardActions>
+                            </Card>
+                        </Grid>)
                     }
                     )
-                }
-
-            </ul>
+                    }
 
 
-
-
-            {/* <section id="blog" class="blog-mf sect-pt4 route">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="title-box text-center">
-            <h3 class="title-a">
-              Blog
-            </h3> */}
+                </Grid>
+            </Container>
         </Layout>
+
     )
 
 }

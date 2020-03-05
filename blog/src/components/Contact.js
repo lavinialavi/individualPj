@@ -2,34 +2,51 @@ import React from 'react';
 import Layout from './Layout'
 import imageLoader from '../media/contact.jpg'
 import { GoMailRead } from 'react-icons/go';
-
+import emailjs from 'emailjs-com';
 
 function Contact(props) {
-    const [ firstName, setFirstName ] = React.useState(); // return [ undefined, function ....]
+    const [firstName, setFirstName ] = React.useState();
+    const [lastName, setLastName]= React.useState();
+    const [subject, setSubject]=React.useState();
+    const [email, setEmail]=React.useState();
+    const [message, setMessage]=React.useState();
+
+    const formData = {
+        firstName: firstName,
+        lastName: lastName,
+        subject: subject,
+        email: email,
+        message: message
+    }
+
+
+
+    
     function handleFirstName(e) {
         setFirstName(e.target.value)
-        console.log(firstName)
-        
     }
-    const [lastName, setLastName]= React.useState();
-    function handleLastName (e){
+    function handleLastName(e) {
         setLastName(e.target.value)
-        console.log(lastName)
     }
-    const [email, setEmail]=React.useState();
-    function handleEmail(e){
+    function handleEmail(e) {
         setEmail(e.target.value)
-        console.log(email)
     }
-    const [subject, setSubject]=React.useState();
-    function handleSubject(e){
+    function handleSubject(e) {
         setSubject(e.target.value)
-        console.log(subject)
     }
-    const [message, setMessage]=React.useState();
-    function handleMessage(e){
+    function handleMessage(e) {
         setMessage(e.target.value)
-        console.log(message)
+    }
+
+    function submitForm(e) {
+        e.preventDefault();
+
+        emailjs.send('gmail', 'blog_template', formData, 'user_yAkgh98C8eT23ofeYaStr')
+            .then((response) => {
+                console.log(response);
+            }, (error) => {
+                console.log(error);
+            });
     }
 
 
@@ -41,7 +58,7 @@ function Contact(props) {
 
                 <div className="w-full md:w-1/2">
 
-                    <form className="flex flex-col shadow-lg px-4 py-2 ">
+                    <form className="flex flex-col shadow-lg px-4 py-2" onSubmit={submitForm}>
 
                         <div className="flex flex-no-wrap mr-8">
                             <div className="w-1/2 mr-8">

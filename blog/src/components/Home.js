@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from './Layout'
 import '../../node_modules/video-react/dist/video-react.css';
 import { Player } from 'video-react';
+import Button from '@material-ui/core/Button'
 // import 'typeface-roboto';
 
 
