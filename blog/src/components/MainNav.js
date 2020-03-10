@@ -6,16 +6,11 @@ import Divider from '@material-ui/core/Divider';
 import Drawer from '@material-ui/core/Drawer';
 import Hidden from '@material-ui/core/Hidden';
 import IconButton from '@material-ui/core/IconButton';
-import HomeIcon from '@material-ui/icons/Home';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import MenuIcon from '@material-ui/icons/Menu';
-import InboxIcon from '@material-ui/icons/Inbox';
-import MailIcon from '@material-ui/icons/Mail';
 import Toolbar from '@material-ui/core/Toolbar';
-import ContactMailIcon from '@material-ui/icons/ContactMail';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import { Link } from 'react-router-dom';
 import menuBarList from '../menuBarList'
@@ -26,7 +21,7 @@ import Home from './Home';
 import Blog from './Blog';
 import Layout from './Layout'
 import '../../node_modules/video-react/dist/video-react.css';
-import { Card, CardContent, Button, CardActions, Grid, Container, CardMedia, Typography } from '@material-ui/core'
+import { Container } from '@material-ui/core'
 
 import {
   BrowserRouter as Router,
@@ -34,7 +29,7 @@ import {
   Route
 } from "react-router-dom";
 
-const drawerWidth = 150;
+const drawerWidth = 130;
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -72,12 +67,7 @@ const useStyles = makeStyles(theme => ({
   drawerPaper: {
     width: drawerWidth,
   },
-  // content: {
-  //   flexGrow: 1,
-  //   padding: theme.spacing(3),
-  // },
 }));
-
 function MainNav(props) {
   const { container } = props;
   const classes = useStyles();
@@ -96,7 +86,6 @@ function MainNav(props) {
       <List>
         {menuBarList.map((item, index) => (
           <ListItem button key={index}>
-            <ListItemIcon>{index % 2 === 0 ? <HomeIcon /> : <MailIcon />}</ListItemIcon>
             <ListItem button component={Link} to={item.link}>
             <Link to={menuBarList.link}></Link>
             <ListItemText primary={item.name} />
@@ -126,7 +115,6 @@ function MainNav(props) {
         </Toolbar>
       </AppBar>
       <nav className={classes.drawer} aria-label="mailbox folders">
-        {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
         <Hidden smUp implementation="css">
           <Drawer
             variant="temporary"
@@ -137,7 +125,7 @@ function MainNav(props) {
               paper: classes.drawerPaper,
             }}
             ModalProps={{
-              keepMounted: true, // Better open performance on mobile.
+              keepMounted: true, 
             }}
           >
             {drawer}
@@ -156,7 +144,7 @@ function MainNav(props) {
         </Hidden>
       </nav>
       <Layout>
-<Container className='my-10'>
+<Container className='my-20'>
 <Switch>
             <Route exact path="/" component={Home}/>
             <Route path="/about" component={About}/>

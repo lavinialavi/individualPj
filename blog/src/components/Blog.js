@@ -2,14 +2,14 @@ import React from 'react';
 import Layout from './Layout'
 import blogPostsList from '../blogPostList'
 import { Link } from 'react-router-dom'
-import { Card, CardContent, Button, CardActions, Grid, Container, CardMedia, Typography } from '@material-ui/core'
+import { Card, CardContent, CardActions, Grid, Container, CardMedia, Typography } from '@material-ui/core'
 
 
 function Blog(props) {
     return (
         <Layout>
-            <Container className='my-10'>
-                <Grid container spacing={2} alignItems="stretch" justify="center">
+            <Container className='my-20'>
+                <Grid container spacing={4} alignItems="stretch" justify="center">
                     {blogPostsList.map(blogPost => {
                         return (<Grid item xs={12} sm={6} md={4} lg={3}>
                             <Card className="h-full">

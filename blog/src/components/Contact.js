@@ -101,7 +101,7 @@ function Contact(props) {
 
                 <div className=" md:w-1/2 px-2 py-2">
                 <div className="w-1/2 mr-4">
-                <div className="flex flex-nowrap items-center"> <h2 className="font-bold text-3xl " >Get in Touch </h2> <GoMailRead className=" ml-4 h-8 w-8 text-blue-500 inline"></GoMailRead></div>
+                <div className="flex flex-wrap items-center"  xs={12} sm={6} md={4} lg={3}> <h2 className="font-bold text-3xl " >Get in Touch </h2> <GoMailRead className=" ml-4 h-8 w-8 text-blue-500 inline"></GoMailRead></div>
                 
 
                    

@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from './Layout'
 import '../../node_modules/video-react/dist/video-react.css';
 import { Player} from 'video-react';
-import { Card, CardContent, Button, CardActions, Grid, Container, CardMedia, Typography } from '@material-ui/core'
+import { Grid, Container, Typography } from '@material-ui/core'
 
 
 
@@ -15,16 +15,14 @@ function Home(props) {
         I'm a Java Script developer based in Romania, creating awesome and effective visual identities for companies of all sizes around the globe. You can start surfing this little app in order to learn more about me.
                I consider that more important then working is enjoying life as it is. Two things I like most, a good coffee and summers.</Typography>
       
-               {/* <Grid container spacing={1} alignItems="stretch" justify="center"> */}
                <Grid
   container
   direction="column"
   justify="center"
   alignItems="center"
-  xs={12} sm={6} md={4} lg={3}>
+  >
    
         <div>
-          {/* <Player className="mx-5 w-10 md:w-5/12 mb-8 mt-8 shadow-outline " */}
 <Player
             fluid={false}
             width={200}
