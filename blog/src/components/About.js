@@ -4,7 +4,7 @@ import Layout from './Layout'
 function About(props) {
   return <Layout>
     <div className="container mx-auto">
-      <h1 className="font-bold text-3xl"> About her</h1>
+      <h1 className="font-bold  p-3 text-3xl"> About her</h1>
       <div className="flex">
         <div className="w-full md:w-1/2  shadow-lg h-48">
           <div className="flex flex-col px-4 py-2 ">
@@ -59,22 +59,22 @@ function About(props) {
         </div>
       </div>
     </div>
-    <div className="mx-10">
-        <h1 className="text-xl lead text-indigo-500 mt-5"> Work </h1>
-        <div><h1 className="text-indigo-300">Between 2013 - 2014 </h1>
-          <p>Accountant assistant</p>
-          
-            <h1 className="text-indigo-300">Between  2015- 2016 </h1>
-           <p>Quality Assurance/ QA Tester /Manual Testing</p>
-          
-           <h1 className="text-indigo-300 ">Between  2016- present </h1>
-           <p>Quality Assurance/ QA Tester/Automation Testing</p>
-          
+    <div className="p-3 mx-10">
+      <h1 className="text-xl lead text-indigo-500 mt-5"> Work </h1>
+      <div><h1 className="text-indigo-300">Between 2013 - 2014 </h1>
+        <p>Accountant assistant</p>
+
+        <h1 className="text-indigo-300">Between  2015- 2016 </h1>
+        <p>Quality Assurance/ QA Tester /Manual Testing</p>
+
+        <h1 className="text-indigo-300 ">Between  2016- present </h1>
+        <p>Quality Assurance/ QA Tester/Automation Testing</p>
 
 
-        </div>
+
       </div>
-    
+    </div>
+
 
   </Layout>
 }

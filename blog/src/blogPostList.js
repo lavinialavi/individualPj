@@ -2,17 +2,17 @@ const blogPostsList = [
     {
         title: 'Envision YOU',
         link: 'first-blog',
-        date: '25 Feb',
-        author: 'Elena ',
+        date: '20 Feb',
+        author: 'Author: Andrei ',
     },
     {
-        title: 'Hey, second',
+        title: 'Learn Your way',
         link: 'second-blog',
-        date: '26 Feb',
+        date: '22 Feb',
         author: 'Author: Lavinia',
     },
     {
-        title: 'Hey, thiddf',
+        title: 'Never give up',
         link: 'third-blog',
         date: '26 Feb',
         author: 'Author: Lavinia',

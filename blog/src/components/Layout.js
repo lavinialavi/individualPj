@@ -7,13 +7,6 @@ function Layout(props) {
 
         {props.children}
 
-      
-
-
-
-
-
-
     </div>
 };
 

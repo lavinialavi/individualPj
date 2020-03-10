@@ -10,11 +10,9 @@ function Project(props) {
             <h1>{props.title}</h1>
             <small>{props.rules}</small>
             <h3 className="font-bold text-1xl">A little project I have worked on {props.author} </h3>
-           
 
             <Codepan className="timeline-entry animate-box fadeInLeft animated">
-                
-            </Codepan> 
+            </Codepan>
             {props.children}
         </Layout>
     )

@@ -18,8 +18,8 @@ function Footer() {
       <a href="https://www.instagram.com/lavibudean" className="instagram social px-2 h-6">
         <FontAwesomeIcon icon={faInstagram} size="1x" />
       </a>
-    <div id="go-top"><a className="smoothscroll" title="back to top" href="/home"><i className="icon-up-open"></i></a></div>
-  </div>
+      <div id="go-top"><a className="smoothscroll" title="back to top" href="/home"><i className="icon-up-open"></i></a></div>
+    </div>
   )
-  }
-  export default Footer
+}
+export default Footer

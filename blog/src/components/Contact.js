@@ -1,6 +1,5 @@
 import React from 'react';
 import Layout from './Layout'
-import imageLoader from '../media/contact.jpg'
 import { GoMailRead } from 'react-icons/go';
 import emailjs from 'emailjs-com';
 
@@ -18,8 +17,6 @@ function Contact(props) {
         email: email,
         message: message
     }
-
-
 
     
     function handleFirstName(e) {
@@ -49,14 +46,12 @@ function Contact(props) {
             });
     }
 
-
-
     return <Layout>
-        <div className="container  mx-20 items-center justify-center">
-            <h1 className="font-bold text-3xl" >Contact me</h1>
+        <div className="container items-center justify-center">
+            <h1 className="font-bold p-3 text-3xl" >Contact me</h1>
             <div className="flex">
 
-                <div className="w-full md:w-1/2">
+                <div className="md:w-1/2">
 
                     <form className="flex flex-col shadow-lg px-4 py-2" onSubmit={submitForm}>
 
@@ -104,14 +99,13 @@ function Contact(props) {
                 </div>
                   
 
-                <div className="w-full md:w-1/2 px-4 py-2">
-                <div className="w-1/2 mr-8">
-                <div className="flex flex-nowrap items-center"> <h1 className="font-bold text-3xl " >Get in Touch </h1> <GoMailRead className=" ml-4 h-8 w-8 text-blue-500 inline"></GoMailRead></div>
+                <div className=" md:w-1/2 px-2 py-2">
+                <div className="w-1/2 mr-4">
+                <div className="flex flex-nowrap items-center"> <h2 className="font-bold text-3xl " >Get in Touch </h2> <GoMailRead className=" ml-4 h-8 w-8 text-blue-500 inline"></GoMailRead></div>
                 
 
                    
-                    Feel free to contact me at any time and I promise I will come back to you as soon as your message reaches out to me. I am open to colaborate and discuss any terms and conditions that might appear along the way. 
-                    I look forward to hearing from you! 
+                    Feel free to contact me at any time and I promise I will come back to you as soon as your message reaches out to me. I am open to colaborate and discuss any terms and conditions that might appear along the way.
 
                   
                    
