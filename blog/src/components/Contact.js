@@ -2,6 +2,8 @@ import React from 'react';
 import Layout from './Layout'
 import { GoMailRead } from 'react-icons/go';
 import emailjs from 'emailjs-com';
+import { Card, CardContent, CardActions, Grid, Container, CardMedia, Typography } from '@material-ui/core'
+
 
 function Contact(props) {
     const [firstName, setFirstName ] = React.useState();
@@ -47,6 +49,7 @@ function Contact(props) {
     }
 
     return <Layout>
+          <Container className='my-10'>
         <div className="container items-center justify-center">
             <h1 className="font-bold p-3 text-3xl" >Contact me</h1>
             <div className="flex">
@@ -104,16 +107,15 @@ function Contact(props) {
                 <div className="flex flex-wrap items-center"  xs={12} sm={6} md={4} lg={3}> <h2 className="font-bold text-3xl " >Get in Touch </h2> <GoMailRead className=" ml-4 h-8 w-8 text-blue-500 inline"></GoMailRead></div>
                 
 
-                   
-                    Feel free to contact me at any time and I promise I will come back to you as soon as your message reaches out to me. I am open to colaborate and discuss any terms and conditions that might appear along the way.
-
-                  
+                   <Typography>
+                    Feel free to contact me at any time and I promise I will come back to you as soon as your message reaches out to me. I am open to colaborate and discuss any terms and conditions that might appear along the way.</Typography>      
                    
 
   </div>
                     </div>
                     </div>
         </div>
+        </Container>
 
     </Layout>
 }

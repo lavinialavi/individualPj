@@ -22,7 +22,6 @@ import Blog from './Blog';
 import Layout from './Layout'
 import '../../node_modules/video-react/dist/video-react.css';
 import { Container } from '@material-ui/core'
-
 import {
   BrowserRouter as Router,
   Switch,
@@ -61,11 +60,13 @@ const useStyles = makeStyles(theme => ({
     marginRight: theme.spacing(2),
     [theme.breakpoints.up('sm')]: {
       display: 'none',
+    
     },
   },
   toolbar: theme.mixins.toolbar,
   drawerPaper: {
     width: drawerWidth,
+    
   },
 }));
 function MainNav(props) {

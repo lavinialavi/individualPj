@@ -1,8 +1,11 @@
 import React from 'react';
 import Layout from './Layout'
+import { Grid, Container, Typography } from '@material-ui/core'
 
 function About(props) {
   return <Layout>
+  <Container>
+  
     <div className="container mx-auto">
       <h1 className="font-bold  p-3 text-3xl"> About her</h1>
       <div className="flex">
@@ -22,6 +25,7 @@ function About(props) {
             </div>
           </div>
         </div>
+     
         <div className="skill-mf  h-48 w-1/2 mr-6 shadow-lg px-3 py-2">
           <p className="title-s">Skill</p>
           <span>HTML</span> <span className="pull-right">85%</span>
@@ -75,7 +79,8 @@ function About(props) {
       </div>
     </div>
 
-
+</Container>
   </Layout>
+  
 }
 export default About;

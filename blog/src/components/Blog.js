@@ -8,12 +8,11 @@ import { Card, CardContent, CardActions, Grid, Container, CardMedia, Typography 
 function Blog(props) {
     return (
         <Layout>
-            <Container className='my-20'>
-                <Grid container spacing={4} alignItems="stretch" justify="center">
+            <Container className='my-10'>
+                <Grid container spacing={6} alignItems="stretch" justify="center">
                     {blogPostsList.map(blogPost => {
-                        return (<Grid item xs={12} sm={6} md={4} lg={3}>
+                        return (<Grid item xs={12} sm={6} md={4} lg={4}>
                             <Card className="h-full">
-
                                 <CardMedia className="h-48"
                                     image="https://res.cloudinary.com/laviniaella/image/upload/v1583308812/lavv/Noble_Gardens_Mural_Wallpaper__Unique_Murals___Forest_Homes_r45m13.jpg">
                                 </CardMedia>

@@ -9,18 +9,19 @@ import { Grid, Container, Typography } from '@material-ui/core'
 function Home(props) {
   return (
     <Layout>
-<Container className='my-10'>
+
       <h2 className="text-6xl bold text-center p-2"> I'm Lavinia.</h2>
+
       <Typography className="text-center mr-20 ml-20 focus:underline">
         I'm a Java Script developer based in Romania, creating awesome and effective visual identities for companies of all sizes around the globe. You can start surfing this little app in order to learn more about me.
                I consider that more important then working is enjoying life as it is. Two things I like most, a good coffee and summers.</Typography>
-      
-               <Grid
+               
+               <Grid 
+           
   container
-  direction="column"
+  direction="row"
   justify="center"
-  alignItems="center"
-  >
+  alignItems="stretch">
    
         <div>
 <Player
@@ -36,7 +37,7 @@ function Home(props) {
 
 </Grid>
     
-      </Container>
+     
     </Layout>
   )
 }
