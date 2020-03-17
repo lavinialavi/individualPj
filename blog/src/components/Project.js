@@ -6,7 +6,7 @@ import { Container } from '@material-ui/core';
 
 function Project(props) {
     return (
-        <Container className='mt-48'>
+        <Container className='mt-48' >
         <Layout >
             <h1>{props.title}</h1>
             <small>{props.rules}</small>
